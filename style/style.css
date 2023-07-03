@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #001C30;
+  padding: 20px 40px;
+  opacity: 0.8;
+}
+.header__logo {
+  width: 50%;
+  padding-left: 100px;
+}
+.header__logo .logo__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header__list {
+  width: 25%;
+}
+.header__list .list__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__list .list__items .items__title {
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease;
+  padding: 5px 0;
+}
+.header__list .list__items .items__title:last-child {
+  margin-right: 0;
+}
+.header__list .list__items .items__title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #DAFFFB;
+  transition: 0.2s ease;
+  margin-top: 5px;
+}
+.header__list .list__items .items__title:hover {
+  color: #64CCC5;
+}
+.header__list .list__items .items__title:hover::after {
+  width: 100%;
+}
+
+.landing {
+  padding-top: 100px;
+  font-size: 5rem;
+  background: url("../public/image/wallpaper.png") center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 200px;
+}
+.landing .landing__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing .landing__text .text__title {
+  font-size: 4rem;
+  color: #DAFFFB;
+  margin-bottom: 10px;
+}
+.landing .landing__text .text__description {
+  font-size: 2rem;
+  color: #64CCC5;
+  margin-bottom: 20px;
+}
+.landing .landing__text .text__btn {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #176B87;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.landing .landing__text .text__btn:hover {
+  background-color: #64CCC5;
+  color: #001C30;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #001C30;
+  padding: 20px 40px;
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=style.css.map */
