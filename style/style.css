@@ -20,6 +20,7 @@
   background-color: #001C30;
   padding: 20px 40px;
   opacity: 0.8;
+  z-index: 999;
 }
 .header__logo {
   width: 50%;
@@ -46,6 +47,7 @@
   position: relative;
   transition: 0.2s ease;
   padding: 5px 0;
+  font-weight: bold;
 }
 .header__list .list__items .items__title:last-child {
   margin-right: 0;
@@ -73,7 +75,7 @@
   font-size: 5rem;
   background: url("../public/image/wallpaper.png") center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -109,10 +111,150 @@
   color: #001C30;
 }
 
+.about-us {
+  padding-top: 120px;
+  min-height: 100vh;
+  background: linear-gradient(360deg, rgb(3, 3, 3) 0%, rgb(28, 29, 33) 100%);
+}
+.about-us .about-us__title {
+  width: 100%;
+  text-align: center;
+}
+.about-us .about-us__title .title__text {
+  font-size: 4rem;
+  color: #DAFFFB;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.about-us .about-us__title .title__text:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(23, 107, 135) 50%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 2px;
+}
+.about-us .about-us__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.about-us .about-us__element .about-us__image {
+  margin-left: 50px;
+}
+.about-us .about-us__element .about-us__image .image__pic {
+  width: 600px;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #176B87;
+  padding: 30px;
+}
+.about-us .about-us__element .about-us__para .para__text {
+  color: #64CCC5;
+  font-size: 1.5rem;
+  line-height: 22px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-us {
+  padding-top: 120px;
+  background: url("../public/image/contactus.jpg") center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact-us .contact-us__title {
+  width: 100%;
+  text-align: center;
+}
+.contact-us .contact-us__title .title__text {
+  font-size: 4rem;
+  color: #DAFFFB;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.contact-us .contact-us__title .title__text:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(23, 107, 135) 50%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 2px;
+}
+.contact-us .contact-us__elements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  padding-left: 200px;
+}
+.contact-us .contact-us__elements .elements__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-us .contact-us__elements .elements__form .form__input {
+  border: none;
+  border-bottom: 1px solid #176B87;
+  background-color: transparent;
+  font-size: 1.6rem;
+  padding: 20px 16px;
+  color: #64CCC5;
+  margin-bottom: 20px;
+  width: 100%;
+  resize: none;
+}
+.contact-us .contact-us__elements .elements__form .form__input::placeholder {
+  color: #64CCC5;
+}
+.contact-us .contact-us__elements .elements__form .form__input:focus {
+  outline: none;
+}
+.contact-us .contact-us__elements .elements__form .form__btn {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #176B87;
+  transition: 0.2s ease;
+}
+.contact-us .contact-us__elements .elements__form .form__btn:hover {
+  background-color: #64CCC5;
+  color: #001C30;
+}
+
+.notFound {
+  padding: 120px 0;
+  background: url("../public/image/notFound.jpg") center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notFound .notFound__title {
+  font-size: 4rem;
+  color: #64CCC5;
+}
+
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -120,6 +262,23 @@
   background-color: #001C30;
   padding: 20px 40px;
   opacity: 0.9;
+  z-index: 999;
+}
+.footer .footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__copyRight {
+  margin-top: 20px;
+}
+.footer .footer__copyRight .copyRight__title {
+  font-size: 1.4rem;
+  color: #64CCC5;
+}
+
+.active {
+  color: #64CCC5 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

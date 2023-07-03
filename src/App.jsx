@@ -7,10 +7,11 @@ import {AboutUs} from "./components/AboutUs.jsx";
 import {ContactUs} from "./components/ContactUs.jsx";
 import {Games} from "./components/Games.jsx";
 import {Footer} from "./components/Footer.jsx";
+import {NotFound} from "./components/NotFound.jsx";
+import {Route, Routes} from "react-router-dom";
 
 //style
 import "../style/style.scss";
-import {Route, Routes} from "react-router-dom";
 
 export const App = () => {
 
@@ -23,6 +24,7 @@ export const App = () => {
                 <Route path="/games" element={<Games/>}/>
                 <Route path="/contact-us" element={<ContactUs/>}/>
                 <Route path="/about-us" element={<AboutUs/>}/>
+                <Route path="*" element={<NotFound/>}/>
             </Routes>
             <Footer/>
         </div>
