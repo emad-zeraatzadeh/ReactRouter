@@ -9,6 +9,7 @@ import {Games} from "./components/Games.jsx";
 import {Footer} from "./components/Footer.jsx";
 import {NotFound} from "./components/NotFound.jsx";
 import {Route, Routes} from "react-router-dom";
+import {GameCard} from "./components/GameCard.jsx";
 
 //style
 import "../style/style.scss";

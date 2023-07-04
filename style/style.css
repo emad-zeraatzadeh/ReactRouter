@@ -12,15 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: #001C30;
   padding: 20px 40px;
-  opacity: 0.8;
-  z-index: 999;
 }
 .header__logo {
   width: 50%;
@@ -109,6 +103,90 @@
 .landing .landing__text .text__btn:hover {
   background-color: #64CCC5;
   color: #001C30;
+}
+
+.games {
+  background: linear-gradient(180deg, rgb(23, 107, 135) 0%, rgb(15, 83, 106) 100%);
+}
+.games .games__title {
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+}
+.games .games__title .title__text {
+  color: #DAFFFB;
+  font-size: 4rem;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.games .games__title .title__text:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(100, 204, 197, 0) 0%, rgb(100, 204, 197) 50%, rgba(100, 204, 197, 0) 100%);
+}
+.games .games__card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  padding-top: 50px;
+}
+.card .card__img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+}
+.card .card__info {
+  padding: 30px;
+  background-color: #001C30;
+  width: 500px;
+  height: 450px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card .card__info .info__title {
+  font-size: 3rem;
+  color: #DAFFFB;
+  margin-bottom: 24px;
+}
+.card .card__info .info__description {
+  font-size: 1.8rem;
+  color: #64CCC5;
+  margin-bottom: 30px;
+}
+.card .card__info .info__btn {
+  border: none;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #001C30;
+  transition: 0.3s ease;
+}
+.card .card__info .info__btn:hover {
+  background-color: #176B87;
+  color: #DAFFFB;
 }
 
 .about-us {
@@ -255,14 +333,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #001C30;
   padding: 20px 40px;
-  opacity: 0.9;
-  z-index: 999;
 }
 .footer .footer__social {
   display: flex;
