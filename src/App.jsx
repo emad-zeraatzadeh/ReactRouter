@@ -9,7 +9,7 @@ import {Games} from "./components/Games.jsx";
 import {Footer} from "./components/Footer.jsx";
 import {NotFound} from "./components/NotFound.jsx";
 import {Route, Routes} from "react-router-dom";
-import {GameCard} from "./components/GameCard.jsx";
+import {GameSingle} from "./components/GameSingle.jsx";
 
 //style
 import "../style/style.scss";
@@ -23,6 +23,7 @@ export const App = () => {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/games" element={<Games/>}/>
+                <Route path="/games/:id" element={<GameSingle/>}/>
                 <Route path="/contact-us" element={<ContactUs/>}/>
                 <Route path="/about-us" element={<AboutUs/>}/>
                 <Route path="*" element={<NotFound/>}/>

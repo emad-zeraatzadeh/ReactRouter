@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-export const GameCard = ({title, description, image}) => {
+export const GameCard = ({id, title, description, image}) => {
 
 
     return (
@@ -13,7 +14,7 @@ export const GameCard = ({title, description, image}) => {
                 <p className="info__description">
                     {description}
                 </p>
-                <button className="info__btn">More info</button>
+                    <Link className="info__btn" to={`/games/${id}`}>More info</Link>
             </div>
         </div>
     );

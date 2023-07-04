@@ -211,12 +211,44 @@ $light-blue: #DAFFFB;
       background-color: $white;
       color: $dark-blue;
       transition: 0.3s ease;
+      text-align: center;
 
       &:hover {
         background-color: $blue;
         color: $light-blue;
       }
     }
+  }
+}
+
+.gameSingle {
+  background-color: #484848;
+
+  .gameSingle__title {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+
+    .title__text {
+      font-size: 4rem;
+      color: $cyan;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, rgba(23,107,135,0) 0%, rgba(23,107,135,1) 50%, rgba(23,107,135,0) 100%);
+      }
+    }
+  }
+
+  .gameSingle__content {
+
   }
 }
 
