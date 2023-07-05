@@ -127,7 +127,7 @@ $light-blue: #DAFFFB;
 }
 
 .games {
-  background: linear-gradient(180deg, rgba(23, 107, 135, 1) 0%, rgba(15, 83, 106, 1) 100%);
+  background: linear-gradient(145deg, rgba(23, 106, 134, 1) 0%, rgba(0, 44, 59, 1) 100%);
 
   .games__title {
     text-align: center;
@@ -222,33 +222,72 @@ $light-blue: #DAFFFB;
 }
 
 .gameSingle {
-  background-color: #484848;
-
-  .gameSingle__title {
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-
-    .title__text {
-      font-size: 4rem;
-      color: $cyan;
-      position: relative;
-
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, rgba(23,107,135,0) 0%, rgba(23,107,135,1) 50%, rgba(23,107,135,0) 100%);
-      }
-    }
-  }
+  background: linear-gradient(145deg, rgba(72, 72, 72, 1) 0%, rgba(27, 27, 27, 1) 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .gameSingle__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
 
+    .content__info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 100px;
+
+      .info__title {
+        font-size: 5rem;
+        color: $cyan;
+        margin-bottom: 20px;
+      }
+
+      .info__description {
+        font-size: 1.6rem;
+        color: $light-blue;
+        width: 500px;
+        margin-bottom: 16px;
+      }
+
+      .info__price {
+        font-size: 4rem;
+        color: $cyan;
+        margin-bottom: 16px;
+        font-weight: bold;
+      }
+
+      .info__buy {
+        color: $light-blue;
+        background-color: $blue;
+        border: none;
+        font-size: 2rem;
+        border-radius: 5px;
+        padding: 10px 50px;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:hover {
+          color: $blue;
+          background-color: $light-blue;
+        }
+      }
+    }
+
+    .content__image {
+      border: 1px solid $light-blue;
+      border-radius: 10px;
+
+      .image__pic {
+        width: 1000px;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    }
   }
 }
 
@@ -401,7 +440,7 @@ $light-blue: #DAFFFB;
   padding: 120px 0;
   background: url("../public/image/notFound.jpg") center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

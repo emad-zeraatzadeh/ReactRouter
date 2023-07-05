@@ -106,7 +106,7 @@
 }
 
 .games {
-  background: linear-gradient(180deg, rgb(23, 107, 135) 0%, rgb(15, 83, 106) 100%);
+  background: linear-gradient(145deg, rgb(23, 106, 134) 0%, rgb(0, 44, 59) 100%);
 }
 .games .games__title {
   text-align: center;
@@ -191,28 +191,66 @@
 }
 
 .gameSingle {
-  background-color: #484848;
+  background: linear-gradient(145deg, rgb(72, 72, 72) 0%, rgb(27, 27, 27) 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.gameSingle .gameSingle__title {
-  text-align: center;
-  width: fit-content;
-  margin: 0 auto;
+.gameSingle .gameSingle__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
-.gameSingle .gameSingle__title .title__text {
+.gameSingle .gameSingle__content .content__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.gameSingle .gameSingle__content .content__info .info__title {
+  font-size: 5rem;
+  color: #64CCC5;
+  margin-bottom: 20px;
+}
+.gameSingle .gameSingle__content .content__info .info__description {
+  font-size: 1.6rem;
+  color: #DAFFFB;
+  width: 500px;
+  margin-bottom: 16px;
+}
+.gameSingle .gameSingle__content .content__info .info__price {
   font-size: 4rem;
   color: #64CCC5;
-  position: relative;
+  margin-bottom: 16px;
+  font-weight: bold;
 }
-.gameSingle .gameSingle__title .title__text:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(23, 107, 135, 0) 0%, rgb(23, 107, 135) 50%, rgba(23, 107, 135, 0) 100%);
+.gameSingle .gameSingle__content .content__info .info__buy {
+  color: #DAFFFB;
+  background-color: #176B87;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
+.gameSingle .gameSingle__content .content__info .info__buy:hover {
+  color: #176B87;
+  background-color: #DAFFFB;
+}
+.gameSingle .gameSingle__content .content__image {
+  border: 1px solid #DAFFFB;
+  border-radius: 10px;
+}
+.gameSingle .gameSingle__content .content__image .image__pic {
+  width: 1000px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 .about-us {
   padding-top: 120px;
   min-height: 100vh;
@@ -342,7 +380,7 @@
   padding: 120px 0;
   background: url("../public/image/notFound.jpg") center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
