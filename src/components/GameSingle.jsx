@@ -1,10 +1,9 @@
 import React from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
 
 export const GameSingle = () => {
 
     const location = useLocation();
-    const id = location.state.id;
     const title = location.state.title;
     const description = location.state.description;
     const price = location.state.price;
@@ -24,6 +23,9 @@ export const GameSingle = () => {
                         {price}$
                     </span>
                     <button className="info__buy">Buy</button>
+                    <Link className="content__back" to="/games">
+                        Back to games
+                    </Link>
                 </div>
                 <div className="content__image">
                     <img src={image} alt="gamePic" className="image__pic"/>

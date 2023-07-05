@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 //components
 import {Header} from "./components/Header.jsx";
@@ -8,7 +8,7 @@ import {ContactUs} from "./components/ContactUs.jsx";
 import {Games} from "./components/Games.jsx";
 import {Footer} from "./components/Footer.jsx";
 import {NotFound} from "./components/NotFound.jsx";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import {GameSingle} from "./components/GameSingle.jsx";
 
 //style
@@ -16,6 +16,11 @@ import "../style/style.scss";
 
 export const App = () => {
 
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, [location])
 
     return (
         <div>
