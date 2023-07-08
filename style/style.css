@@ -64,15 +64,20 @@
   width: 100%;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .landing {
-  font-size: 5rem;
   background: url("../public/image/wallpaper.png") center;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 200px;
+  flex: 1;
 }
 .landing .landing__text {
   display: flex;
@@ -111,6 +116,7 @@
   text-align: center;
   width: 100%;
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 .games .games__title .title__text {
   color: #DAFFFB;
@@ -133,8 +139,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 50px;
+  gap: 50px;
 }
 
 .card {
@@ -143,7 +150,6 @@
   justify-content: center;
   flex-direction: column;
   width: 500px;
-  padding-top: 50px;
 }
 .card .card__img {
   width: 100%;
@@ -200,7 +206,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
 }
 .gameSingle .gameSingle__content .content__info {
   display: flex;
@@ -260,15 +265,15 @@
   border-radius: 10px;
 }
 .gameSingle .gameSingle__content .content__image .image__pic {
-  width: 1000px;
+  width: 800px;
   border-radius: 20px;
   padding: 10px;
 }
 
 .about-us {
-  padding-top: 100px;
-  min-height: 100vh;
+  padding-top: 50px;
   background: linear-gradient(360deg, rgb(3, 3, 3) 0%, rgb(28, 29, 33) 100%);
+  flex: 1;
 }
 .about-us .about-us__title {
   width: 100%;
@@ -317,10 +322,10 @@
 }
 
 .contact-us {
-  padding-top: 100px;
+  padding-top: 50px;
   background: url("../public/image/contactus.jpg") center;
   background-size: cover;
-  min-height: 100vh;
+  flex: 1;
 }
 .contact-us .contact-us__title {
   width: 100%;
@@ -394,10 +399,10 @@
   padding: 120px 0;
   background: url("../public/image/notFound.jpg") center;
   background-size: cover;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .notFound .notFound__title {
   font-size: 4rem;
@@ -416,6 +421,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer .footer__social .social__icon {
+  margin-right: 30px;
+  color: #DAFFFB;
+  transition: 0.2s ease;
+  cursor: pointer;
+  font-size: 30px;
+}
+.footer .footer__social .social__icon:last-child {
+  margin-right: 0;
+}
+.footer .footer__social .social__icon:hover {
+  color: #64CCC5;
 }
 .footer .footer__copyRight {
   margin-top: 20px;

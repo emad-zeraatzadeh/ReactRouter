@@ -7,9 +7,9 @@ export const Footer = () => {
     return (
         <div className="footer">
             <div className="footer__social">
-                <FaTelegram size={50} style={{color: "#DAFFFB", cursor: "pointer"}}/>
-                <FaInstagram size={50} style={{color: "#DAFFFB", marginLeft: "30px", cursor: "pointer"}}/>
-                <FaLinkedin size={50} style={{color: "#DAFFFB", marginLeft: "30px", cursor: "pointer"}}/>
+                <FaTelegram className="social__icon"/>
+                <FaInstagram className="social__icon"/>
+                <FaLinkedin className="social__icon"/>
             </div>
             <div className="footer__copyRight">
                 <span className="copyRight__title">

@@ -23,7 +23,7 @@ export const App = () => {
     }, [location])
 
     return (
-        <div>
+        <div className="app">
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
