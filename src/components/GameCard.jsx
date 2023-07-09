@@ -14,11 +14,15 @@ export const GameCard = ({id, title, description, image, price}) => {
                 <p className="info__description">
                     {description}
                 </p>
-                    <Link className="info__btn"
-                          to={{pathname: `/games/${id}`}}
-                          state={{id, title, description, image, price}}
-                    >More info</Link>
+                <Link className="info__btn" to={`/games/${id}`}>More info</Link>
             </div>
         </div>
     );
 };
+
+
+// This used for pathname state way
+{/*<Link className="info__btn"*/}
+{/*      to={{pathname: `/games/${id}`}}*/}
+{/*      state={{id, title, description, image, price}}*/}
+{/*>More info</Link>*/}

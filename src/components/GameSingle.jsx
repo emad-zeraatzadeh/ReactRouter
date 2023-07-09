@@ -1,13 +1,21 @@
 import React from 'react';
-import {Link, useLocation} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {data} from "../data/data.js";
 
 export const GameSingle = () => {
 
-    const location = useLocation();
-    const title = location.state.title;
-    const description = location.state.description;
-    const price = location.state.price;
-    const image = location.state.image;
+    //this one used for useLocation way <<
+    // const location = useLocation();
+    // const title = location.state.title;
+    // const description = location.state.description;
+    // const price = location.state.price;
+    // const image = location.state.image;
+
+    const {id} = useParams();
+    const title = data[id-1].title;
+    const description = data[id-1].description;
+    const price = data[id-1].price;
+    const image = data[id-1].image;
 
     return (
         <div className="gameSingle">
